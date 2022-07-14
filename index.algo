@@ -1,0 +1,39 @@
+ALGORITHM 
+
+VAR 
+Nb , i , Mot : INTEGER;
+phrase: STRING;
+
+voy = ['a','e','i','o','u',y];
+Nbvoy = INTEGER;
+
+BEGIN
+
+    Write ("Entrez votre phrase")
+    READ (phrase);
+    Nb = 0;
+    FOR i = 1 a phrase.length
+            if (phrase[i] !== " ")
+                Nb = Nb + 1;
+            end if;
+
+            if (phrase[i] == " ")
+                Mot = Mot + 1;
+            end if;
+            
+            FOR j from 0 to voy.length-1 do 
+                if (phrase [i] == voy[j])
+                    Nbvoy = Nbvoy + 1 ;
+                end if
+            END FOR
+    END FOR
+
+    Write "cette phrase compte +"Mot + 1", mots";
+    Write "cette phrase compte + "Nbvoy", mots";                
+
+END
+
+
+
+
+
